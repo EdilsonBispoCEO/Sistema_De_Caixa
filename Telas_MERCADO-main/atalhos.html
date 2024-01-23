@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teclas de Atalho</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        #section1, #section2, #section3 {
+            display: none;
+        }
+</style>
+</head>
+<body>
+ 
+    <h1>Teclas de Atalho</h1>
+ 
+    <p>Pressione as teclas 1, 2 ou 3 para mostrar diferentes seções:</p>
+ 
+    <div id="section1">
+<h2>Seção 1</h2>
+<p>Conteúdo da Seção 1.</p>
+</div>
+ 
+    <div id="section2">
+<h2>Seção 2</h2>
+<p>Conteúdo da Seção 2.</p>
+</div>
+ 
+    <div id="section3">
+<h2>Seção 3</h2>
+<p>Conteúdo da Seção 3.</p>
+</div>
+ 
+    <script>
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "1") {
+                showSection("section1");
+            } else if (event.key === "2") {
+                showSection("section2");
+            } else if (event.key === "3") {
+                showSection("section3");
+            }
+        });
+ 
+        function showSection(sectionId) {
+            // Esconder todas as seções
+            document.getElementById("section1").style.display = "none";
+            document.getElementById("section2").style.display = "none";
+            document.getElementById("section3").style.display = "none";
+ 
+            // Mostrar a seção específica
+            document.getElementById(sectionId).style.display = "block";
+        }
+</script>
+ 
+</body>
+</html>

@@ -1,0 +1,23 @@
+nav.menu {
+    position: fixed; /* ou 'absolute' dependendo do comportamento desejado */
+    left: 0;
+    top: 50%; /* ou a altura desejada */
+    transform: translateY(-50%);
+    background-color: #f4f4f4; /* Cor de fundo desejada */
+    padding: 10px;
+    margin: 20px;
+}
+
+nav.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav.menu ul li {
+    margin-bottom: 15px;
+}
+
+nav.menu a {
+    text-decoration: none;
+    color: #333; /* Cor dos links desejada */
+}
